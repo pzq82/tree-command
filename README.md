@@ -6,7 +6,7 @@ tree是一个能列出递归目录的命令，以图形显示驱动器或路径�
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'" 。保存退出后，使用source .bashrc命令更新一下脚本资源，这是再在终端下试一下tree命令.
 第二种没有试过，我们来试下比较简单的第一种吧。
 
-``` python
+``` 
 
 # 安装Homebrew 在终端输入下面指令
 
@@ -17,7 +17,7 @@ brew install tree
 ```
 在某个项目下执行tree命令即可
 
-``` python 
+``` 
 panzhiqiangdeMacBook-Pro:webpack2-in-action panzhiqiang$ tree -L 1
 
 # -L 1 指只显示一级目录
@@ -33,7 +33,7 @@ panzhiqiangdeMacBook-Pro:webpack2-in-action panzhiqiang$ tree -L 1
 
 tree命令后面的参数有其他可选,具体我们可以用tree --help来查看
 
-``` python
+```
 panzhiqiangdeMacBook-Pro:webpack2-in-action panzhiqiang$ tree --help
 usage: tree [-acdfghilnpqrstuvxACDFJQNSUX] [-H baseHREF] [-T title ]
         [-L level [-R]] [-P pattern] [-I pattern] [-o filename] [--version]
